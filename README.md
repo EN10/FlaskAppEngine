@@ -24,6 +24,8 @@ Create a new GCP project and App Engine application using the GCP Console
 
     gcloud init
 
+Create `main.py` & `app.yaml`
+
 #### Deploy app
 
     gcloud app deploy
