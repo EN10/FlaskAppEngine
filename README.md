@@ -1,7 +1,7 @@
 # Flask Hello World on Google App Engine
 
 Based on:
-* [Python App Engine Quickstart](https://cloud.google.com/appengine/docs/standard/python/quickstart#hello_world_code_review)
+* [Python App Engine Quickstart](https://cloud.google.com/appengine/docs/standard/python/quickstart)
 * [Flask Hello World on Heroku](https://github.com/EN10/PythonHeroku)
 * [Flask Hello World on App Engine](https://github.com/GoogleCloudPlatform/python-docs-samples/tree/master/appengine/standard/flask/hello_world)
 
