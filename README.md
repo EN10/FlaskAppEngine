@@ -3,29 +3,23 @@
 Based on:
 * [Python App Engine Quickstart](https://cloud.google.com/appengine/docs/standard/python/quickstart)
 * [Flask Hello World on Heroku](https://github.com/EN10/PythonHeroku)
-* [Flask Hello World on App Engine](https://github.com/GoogleCloudPlatform/python-docs-samples/tree/master/appengine/standard/flask/hello_world)
+* [Flask Hello World on App Engine](https://github.com/GoogleCloudPlatform/python-docs-samples/tree/master/appengine/standard_python37/hello_world)
 
 #### Create Project:
 Create a new GCP project and App Engine application using the GCP Console   
 * [Go To App Engine](https://console.cloud.google.com/projectselector/appengine/create?lang=python)
 
-### Install SDK:
+#### Load Example app
 
-**Install Google Cloud SDK :**
+Click Activate Cloud Shell
 
-    export CLOUD_SDK_REPO="cloud-sdk-$(lsb_release -c -s)"
-    echo "deb http://packages.cloud.google.com/apt $CLOUD_SDK_REPO main" | sudo tee -a /etc/apt/sources.list.d/google-cloud-sdk.list
-    curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
-    sudo apt-get update && sudo apt-get install google-cloud-sdk
-    
-[Ref](https://cloud.google.com/sdk/docs/#deb)
+    git clone https://github.com/EN10/FlaskAppEngine
+    cd FlaskAppEngine
 
-#### Login, Verify & Select Project:
+Install Flask
 
-    gcloud init
+    pip3 install Flask==1.0.2
 
-Create `main.py` & `app.yaml`
+#### Test App
 
-#### Deploy app
-
-    gcloud app deploy
+    python3 main.py
